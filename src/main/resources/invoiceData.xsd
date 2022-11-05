@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.frkn.com/invoicedata/ws"
+           targetNamespace="http://www.frkn.com/invoicedata/ws" elementFormDefault="qualified">
+
+    <xs:element name="getDataRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="listType" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDataResponse">
+        <xs:complexType>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element name="customerData" type="tns:customer" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="invoiceData" type="tns:invoice" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="message" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addCustomerRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addCustomerResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer"/>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addInvoiceRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="invoicedate" type="xs:dateTime"/>
+                <xs:element name="price" type="xs:double"/>
+                <xs:element name="customerId" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addInvoiceResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer"/>
+                <xs:element name="invoicedate" type="xs:dateTime"/>
+                <xs:element name="price" type="xs:double"/>
+                <xs:element name="customerId" type="xs:integer"/>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="customer">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="invoice">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="invoicedate" type="xs:dateTime"/>
+            <xs:element name="cutomer" type="tns:customer"/>
+            <xs:element name="price" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="serviceStatus">
+        <xs:sequence>
+            <xs:element name="statusCode" type="xs:string"/>
+            <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
