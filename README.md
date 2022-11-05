@@ -178,7 +178,7 @@
                                             </ns2:getDataResponse>
                                          </SOAP-ENV:Body>
                                       </SOAP-ENV:Envelope>
-## WSDL and XSD Schemas(#wsdl-and-xsd-schemas)
+## WSDL and XSD Schemas
 
  ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/invoice_lister_wsdl.jpg?raw=true)
  
