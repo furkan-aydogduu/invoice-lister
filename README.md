@@ -15,7 +15,7 @@
 - Every request data in the SOAP messages goes through some validation processes(like customer name, invoice date or price validations e.g.) before the endpoint returns a response. If validation fails, endpoint returns a convenient response message related to the incoming request.
 - The service can be tested from a SOAP UI software. Examples of the usage of the endpoint are given at the [Test Examples of SOAP UI Client](#test-examples-of-soap-ui-client) section.
 - The database architecture of the backend system are structured on two databases which are that one holds the customers and system users and the other holds the invoice data. ER diagram of the system is provided at the [ER Diagram](#er-diagram) section. 
-- Related WSDL and XSD informations are provided at the [WSDL & XSD Schemas](#wsdl-&-xsd-schemas) section.
+- Related WSDL and XSD informations are provided at the [WSDL and XSD Schemas](#wsdl-and-xsd-schemas) section.
 - Since the endpoints runs on the HTTPS protocol, the related JKS keystore is provided at the src/main/resources folder of the source code. The details about the keystore configuration are provided at the src/main/resources/application.properties of the source code.
 - Some predefined ER data are provided in the database system. So, when the end point starts up, the listing operations are available even if any adding operation are not done on the system.  
 ## Technologies used:
@@ -178,9 +178,14 @@
                                             </ns2:getDataResponse>
                                          </SOAP-ENV:Body>
                                       </SOAP-ENV:Envelope>
-## WSDL & XSD Schemas
+## WSDL and XSD Schemas
 
  ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/invoice_lister_wsdl.jpg?raw=true)
-     
+ 
+ ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/invoice_lister_xsd_schema.jpg?raw=true)
+
+## ER Diagram
+
+ ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/InvoiceLister_ER_Diagram.jpg?raw=true)
                                     
  
