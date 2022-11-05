@@ -16,7 +16,7 @@
 - The service can be tested from a SOAP UI software. Examples of the usage of the endpoint are given at the [Test Examples of SOAP UI Client](#test-examples-of-soap-ui-client) section.
 - The database architecture of the backend system are structured on two databases which are that one holds the customers and system users and the other holds the invoice data. ER diagram of the system is provided at the [ER Diagram](#er-diagram) section. 
 - Related WSDL and XSD informations are provided at the [WSDL and XSD Schemas](#wsdl-and-xsd-schemas) section.
-- Since the endpoints runs on the HTTPS protocol, the related JKS keystore is provided at the src/main/resources folder of the source code. The details about the keystore configuration are provided at the src/main/resources/application.properties of the source code.
+- Since the endpoint runs on the HTTPS protocol, the related JKS keystore is provided at the src/main/resources folder of the source code. The details about the keystore configuration are provided at the src/main/resources/application.properties of the source code.
 - Some predefined ER data are provided in the database system. So, when the end point starts up, the listing operations are available even if any adding operation are not done on the system. 
 - The service can be directly started after the source code compilation and the endpoint will be availabe at the specified URL below.
 
