@@ -190,10 +190,17 @@
                                     
 ## WSS-Security Configuration
   ### Step 1: Double click the project on the left side panel.
-	![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step1.jpg?raw=true)
+	
+  ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step1.jpg?raw=true)
+  
   ### Step 2: Select the WS-Security Configurations tab from the properties of the soap project.
-	![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step2.jpg?raw=true)
-  ### Step 3: Click "+" icon and give a name to the security configuration (like sec e.g.)
-	![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step3.jpg?raw=true)
-  ### Step 4: Click "+" icon on the bottom panel to a WSS Entry and select the "Username" entry. After that, click the entry and fill the username and password fields with the appropriate credentials(which are the system users). Uncheck the "Add Nonce" and "Add Created" options and select the password type as the "PasswordText". Now the SOAP client will be available to send a request to the service.
-	![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step4.jpg?raw=true)
+	
+  ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step2.jpg?raw=true)
+ 
+ ### Step 3: Click "+" icon and give a name to the security configuration (like sec e.g.)
+	
+  ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step3.jpg?raw=true)
+  
+ ### Step 4: Click "+" icon on the bottom panel to a WSS Entry and select the "Username" entry. After that, click the entry and fill the username and password fields with the appropriate credentials(which are the system users). Uncheck the "Add Nonce" and "Add Created" options and select the password type as the "PasswordText". Now the SOAP client will be available to send a request to the service.
+	
+  ![alt text](https://github.com/furkan-aydogduu/invoice-lister/blob/master/src/main/resources/docs/wss_config_step4.jpg?raw=true)
